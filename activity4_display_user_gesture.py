@@ -18,7 +18,7 @@ def get_gesture(hand_landmarks):
         return "Rock"
     elif fingers == [1, 1, 1, 1]:
         return "Paper"
-    elif fingers[:2] == [1, 1] and fingers[2:] == [0, 0]:
+    elif fingers==[1,1,0,0]:
         return "Scissors"
     else:
         return "Unknown"
